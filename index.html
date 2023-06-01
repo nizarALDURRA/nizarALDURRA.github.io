@@ -27,7 +27,7 @@
 
     <style>
         /* Center the loader */
-        
+
         #loader {
             position: absolute;
             left: 50%;
@@ -42,26 +42,29 @@
             -webkit-animation: spin 2s linear infinite;
             animation: spin 2s linear infinite;
         }
-        
+
         @-webkit-keyframes spin {
             0% {
                 -webkit-transform: rotate(0deg);
             }
+
             100% {
                 -webkit-transform: rotate(360deg);
             }
         }
-        
+
         @keyframes spin {
             0% {
                 transform: rotate(0deg);
             }
+
             100% {
                 transform: rotate(360deg);
             }
         }
+
         /* Add animation to "page content" */
-        
+
         .animate-bottom {
             position: relative;
             -webkit-animation-name: animatebottom;
@@ -69,29 +72,31 @@
             animation-name: animatebottom;
             animation-duration: 1s
         }
-        
+
         @-webkit-keyframes animatebottom {
             from {
                 bottom: -100px;
                 opacity: 0
             }
+
             to {
                 bottom: 0px;
                 opacity: 1
             }
         }
-        
+
         @keyframes animatebottom {
             from {
                 bottom: -100px;
                 opacity: 0
             }
+
             to {
                 bottom: 0;
                 opacity: 1
             }
         }
-        
+
         #myDiv {
             display: none;
         }
@@ -100,23 +105,27 @@
         * {
             box-sizing: border-box;
         }
+
         /* Position the image container (needed to position the left and right arrows) */
-        
+
         .container {
             position: relative;
         }
+
         /* Hide the images by default */
-        
+
         .mySlides {
             display: none;
         }
+
         /* Add a pointer when hovering over the thumbnail images */
-        
+
         .cursor {
             cursor: pointer;
         }
+
         /* Next & previous buttons */
-        
+
         .prev,
         .next {
             cursor: pointer;
@@ -132,20 +141,23 @@
             user-select: none;
             -webkit-user-select: none;
         }
+
         /* Position the "next button" to the right */
-        
+
         .next {
             right: 0;
             border-radius: 3px 0 0 3px;
         }
+
         /* On hover, add a black background color with a little bit see-through */
-        
+
         .prev:hover,
         .next:hover {
             background-color: rgba(0, 0, 0, 0.8);
         }
+
         /* Number text (1/3 etc) */
-        
+
         .numbertext {
             color: #f2f2f2;
             font-size: 12px;
@@ -153,57 +165,60 @@
             position: absolute;
             top: 0;
         }
+
         /* Container for image text */
-        
+
         .caption-container {
             text-align: center;
             background-color: #222;
             padding: 2px 16px;
             color: white;
         }
-        
+
         .row:after {
             content: "";
             display: table;
             clear: both;
         }
+
         /* Six columns side by side */
-        
+
         .column {
             float: left;
             width: 16.66%;
         }
+
         /* Add a transparency effect for thumnbail images */
-        
+
         .demo {
             opacity: 0.6;
         }
-        
+
         .active,
         .demo:hover {
             opacity: 1;
         }
     </style>
     <style>
-         ::-webkit-scrollbar {
+        ::-webkit-scrollbar {
             width: 20px;
         }
-        
-         ::-webkit-scrollbar-track {
+
+        ::-webkit-scrollbar-track {
             background-color: transparent;
         }
-        
-         ::-webkit-scrollbar-thumb {
+
+        ::-webkit-scrollbar-thumb {
             background-color: #d6dee1;
             border-radius: 20px;
             border: 6px solid transparent;
             background-clip: content-box;
         }
-        
-         ::-webkit-scrollbar-thumb:hover {
+
+        ::-webkit-scrollbar-thumb:hover {
             background-color: #a8bbbf;
         }
-        
+
         .sliderImg {
             width: 100%;
             /* border-radius: 25px 25px 0px 0px; */
@@ -216,14 +231,25 @@
     <div id="loader"></div>
 
     <div style="display:none;" id="myDiv" class="animate-bottom">
+        <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
+            <div class="container">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+
+            </div>
+        </nav>
         <div id="home" class="intro route bg-image" style="background-image: url(img/background.jpg)">
             <div class="overlay-itro"></div>
             <div class="intro-content display-table">
                 <div class="table-cell">
                     <div class="container">
                         <h1 class="intro-title mb-4">Nizar Aldurra</h1>
-                        <p class="intro-subtitle"><span class="text-slider-items">Flutter Developer,React JS Developer,Laravel Developer</span><strong class="text-slider"></strong></p>
-                        <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button"><span style="font-weight: bold;">Show CV</span></a></p>
+                        <p class="intro-subtitle"><span class="text-slider-items">Flutter Developer,React JS
+                                Developer,Laravel Developer</span><strong class="text-slider"></strong></p>
+                        <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button"><span
+                                    style="font-weight: bold;">Show CV</span></a></p>
                     </div>
                 </div>
             </div>
@@ -256,14 +282,21 @@
                                                 </h5>
                                             </div>
                                             <div class="about-info">
-                                                <p><span class="title-s">Name: </span> <br><span>Nizar Aldurra</span></p>
-                                                <p><span class="title-s">Email: </span> <br> <span>e.nizar.aldurra@gmail.com</span></p>
-                                                <p><span class="title-s">Phone: </span><br> <span>+971509852070</span></p>
-                                                <p><span class="title-s">Date Of Birth: </span><br> <span>04-07-1998</span></p>
-                                                <p><span class="title-s">Address: </span><br> <span>Dubai - UAE</span></p>
+                                                <p><span class="title-s">Name: </span> <br><span>Nizar Aldurra</span>
+                                                </p>
+                                                <p><span class="title-s">Email: </span> <br>
+                                                    <span>e.nizar.aldurra@gmail.com</span></p>
+                                                <p><span class="title-s">Phone: </span><br> <span>+971509852070</span>
+                                                </p>
+                                                <p><span class="title-s">Date Of Birth: </span><br>
+                                                    <span>04-07-1998</span></p>
+                                                <p><span class="title-s">Address: </span><br> <span>Dubai - UAE</span>
+                                                </p>
 
-                                                <p><span class="title-s">Nationality: </span><br> <span>Syrian</span></p>
-                                                <p><span class="title-s">Marital Status: </span><br> <span>Exempted ( Single )</span></p>
+                                                <p><span class="title-s">Nationality: </span><br> <span>Syrian</span>
+                                                </p>
+                                                <p><span class="title-s">Marital Status: </span><br> <span>Exempted (
+                                                        Single )</span></p>
                                             </div>
                                         </div>
                                     </div>
@@ -271,27 +304,33 @@
                                         <p class="title-s">Skill</p>
                                         <span>Flutter/Dart</span> <span class="pull-right">90%</span>
                                         <div class="progress">
-                                            <div class="progress-bar" role="progressbar" style="width: 90%;" aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
+                                            <div class="progress-bar" role="progressbar" style="width: 90%;"
+                                                aria-valuenow="90" aria-valuemin="0" aria-valuemax="100"></div>
                                         </div>
                                         <span>PHP/laravel</span> <span class="pull-right">80%</span>
                                         <div class="progress">
-                                            <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                                            <div class="progress-bar" role="progressbar" style="width: 80%"
+                                                aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
                                         </div>
                                         <span>React js</span> <span class="pull-right">80%</span>
                                         <div class="progress">
-                                            <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                                            <div class="progress-bar" role="progressbar" style="width: 80%"
+                                                aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
                                         </div>
                                         <span>html/css/js/bootstrap</span> <span class="pull-right">80%</span>
                                         <div class="progress">
-                                            <div class="progress-bar" role="progressbar" style="width: 80%" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
+                                            <div class="progress-bar" role="progressbar" style="width: 80%"
+                                                aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"></div>
                                         </div>
                                         <span>Java</span> <span class="pull-right">70%</span>
                                         <div class="progress">
-                                            <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                                            <div class="progress-bar" role="progressbar" style="width: 70%"
+                                                aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
                                         </div>
                                         <span>Python AI</span> <span class="pull-right">70%</span>
                                         <div class="progress">
-                                            <div class="progress-bar" role="progressbar" style="width: 70%" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
+                                            <div class="progress-bar" role="progressbar" style="width: 70%"
+                                                aria-valuenow="70" aria-valuemin="0" aria-valuemax="100"></div>
                                         </div>
                                     </div>
                                     <div style="display: inline-block;">
@@ -321,46 +360,60 @@
                                             </h5>
                                         </div>
                                         <p class="lead ">
-                                            I'm an AI developer, I've worked on various projects in different industries using several frameworks with +2
-years experience in software development.challenges lover, smart worker, helpful and confident person
+                                            I'm an AI developer, I've worked on various projects in different industries
+                                            using several frameworks with +2
+                                            years experience in software development.challenges lover, smart worker,
+                                            helpful and confident person
                                         </p>
                                         <br>
                                         <h5>
                                             Education
                                         </h5>
                                         <p class="lead ">
-                                            Information technology engineering - Artificial intelligence specialist - Damascus University
+                                            Information technology engineering - Artificial intelligence specialist -
+                                            Damascus University
                                         </p>
                                         <br>
                                         <h5>
                                             Skill Highlights
                                         </h5>
                                         <p class="lead ">
-                                            <Span style="font-size: 30px; font-weight: bold; color: #0078ff; ">•</Span> convert ideas to real products
+                                            <Span style="font-size: 30px; font-weight: bold; color: #0078ff; ">•</Span>
+                                            convert ideas to real products
                                         </p>
                                         <p class="lead ">
-                                            <Span style="font-size: 30px; font-weight: bold; color: #0078ff; ">•</Span> Excellent self-education
+                                            <Span style="font-size: 30px; font-weight: bold; color: #0078ff; ">•</Span>
+                                            Excellent self-education
                                         </p>
                                         <p class="lead ">
-                                            <Span style="font-size: 30px; font-weight: bold; color: #0078ff; ">•</Span> Complex Problem Sloving
+                                            <Span style="font-size: 30px; font-weight: bold; color: #0078ff; ">•</Span>
+                                            Complex Problem Sloving
                                         </p>
                                         <p class="lead ">
-                                            <Span style="font-size: 30px; font-weight: bold; color: #0078ff; ">•</Span> Write clean code
+                                            <Span style="font-size: 30px; font-weight: bold; color: #0078ff; ">•</Span>
+                                            Write clean code
                                         </p>
                                         <p class="lead ">
-                                            <Span style="font-size: 30px; font-weight: bold; color: #0078ff; ">•</Span> fast learner
+                                            <Span style="font-size: 30px; font-weight: bold; color: #0078ff; ">•</Span>
+                                            fast learner
                                         </p>
                                         <br>
                                         <h5>
                                             Work Experience
                                         </h5>
                                         <p class="lead ">
-                                            <Span style="font-size: 30px; font-weight: bold; color: #0078ff; ">•</Span> Web developerb at Sawa-ISP <span style="font-weight: 400; color: rgb(160, 163, 160); ">10/2022 - 05/2023</span>
+                                            <Span style="font-size: 30px; font-weight: bold; color: #0078ff; ">•</Span>
+                                            Web developerb at Sawa-ISP <span
+                                                style="font-weight: 400; color: rgb(160, 163, 160); ">10/2022 -
+                                                05/2023</span>
                                         </p>
 
 
                                         <p class="lead ">
-                                            <Span style="font-size: 30px; font-weight: bold; color: #0078ff; ">•</Span> Flutter Developer at Evolution Engineering <span style="font-weight: 400; color: rgb(160, 163, 160); ">02/2022 - 10/2022</span>
+                                            <Span style="font-size: 30px; font-weight: bold; color: #0078ff; ">•</Span>
+                                            Flutter Developer at Evolution Engineering <span
+                                                style="font-weight: 400; color: rgb(160, 163, 160); ">02/2022 -
+                                                10/2022</span>
                                         </p>
                                     </div>
                                 </div>
@@ -368,7 +421,9 @@ years experience in software development.challenges lover, smart worker, helpful
                             </div>
                             <center>
                                 <p class="pt-3">
-                                    <a class="btn btn-primary btn js-scroll px-4" href="Nizar Aldurra.pdf" target="_blank" role="button"><span style="font-weight: bold;">Download CV</span></a>
+                                    <a class="btn btn-primary btn js-scroll px-4" href="Nizar Aldurra.pdf"
+                                        target="_blank" role="button"><span style="font-weight: bold;">Download
+                                            CV</span></a>
                                 </p>
                             </center>
                         </div>
@@ -408,16 +463,21 @@ years experience in software development.challenges lover, smart worker, helpful
                                             <div style="height: 190px; overflow:auto;
                                      ">
                                                 <p>
-                                                    A mobile application that showcases a diverse range of cooking recipes from different civilizations. The application allow users to explore and discover new recipes while also providing the option to contribute and add their own unique recipes to the collection.
+                                                    A mobile application that showcases a diverse range of cooking
+                                                    recipes from different civilizations. The application allow users to
+                                                    explore and discover new recipes while also providing the option to
+                                                    contribute and add their own unique recipes to the collection.
                                                     <br><br>
                                                 </p>
                                             </div>
 
                                             <a target="_blank " href="
-                                            https://github.com/nizarALDURRA/Meals_app/"><span style="color: #0078ff;">Visit : Meal App on github</span></a>
+                                            https://github.com/nizarALDURRA/Meals_app/"><span
+                                                    style="color: #0078ff;">Visit : Meal App on github</span></a>
                                             <br>
                                             <div style="margin-top: 20px;" class="w-more ">
-                                                <span class="w-ctegory ">Flutter - dart - SQLite</span> / <span class="w-date "> 2019</span>
+                                                <span class="w-ctegory ">Flutter - dart - SQLite</span> / <span
+                                                    class="w-date "> 2019</span>
                                             </div>
                                         </div>
                                     </div>
@@ -438,16 +498,20 @@ years experience in software development.challenges lover, smart worker, helpful
                                             <div style="height: 190px; overflow:auto;
                                      ">
                                                 <p>
-                                                    Khasm is an application that offers users several vouchers to get discounts on a wide variety of goods and services technology.
+                                                    Khasm is an application that offers users several vouchers to get
+                                                    discounts on a wide variety of goods and services technology.
                                                     <br><br>
                                                 </p>
                                             </div>
 
-                                            <a target="_blank " href="
-                                            https://play.google.com/store/apps/details?id=com.khasmapp_new_release.khasm"><span style="color: #0078ff;">Visit : Khasm on google play</span></a>
+                                            <a target="_blank "
+                                                href="
+                                            https://play.google.com/store/apps/details?id=com.khasmapp_new_release.khasm"><span
+                                                    style="color: #0078ff;">Visit : Khasm on google play</span></a>
                                             <br>
                                             <div style="margin-top: 20px;" class="w-more ">
-                                                <span class="w-ctegory ">Flutter - dart - Laravel - php</span> / <span class="w-date "> 2019</span>
+                                                <span class="w-ctegory ">Flutter - dart - Laravel - php</span> / <span
+                                                    class="w-date "> 2019</span>
                                             </div>
                                         </div>
                                     </div>
@@ -468,16 +532,19 @@ years experience in software development.challenges lover, smart worker, helpful
                                             <div style="height: 190px; overflow:auto;
                                      ">
                                                 <p>
-                                                    It's a ridesharing taxi application to grab a taxi ride any time of day or night.
+                                                    It's a ridesharing taxi application to grab a taxi ride any time of
+                                                    day or night.
                                                     <br><br>
                                                 </p>
                                             </div>
 
                                             <a target="_blank " href="
-                                            https://github.com/Dhroog/Taxy/"><span style="color: #0078ff;">Visit : Taxy App on github</span></a>
+                                            https://github.com/Dhroog/Taxy/"><span style="color: #0078ff;">Visit : Taxy
+                                                    App on github</span></a>
                                             <br>
                                             <div style="margin-top: 20px;" class="w-more ">
-                                                <span class="w-ctegory ">Laravel - PHP </span> / <span class="w-date "> 2022</span>
+                                                <span class="w-ctegory ">Laravel - PHP </span> / <span class="w-date ">
+                                                    2022</span>
                                             </div>
                                         </div>
                                     </div>
